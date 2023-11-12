@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: spring-kubernetes-secret-deployment
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: springk8s
@@ -11,7 +12,6 @@ spec:
       labels:
         app: springk8s
     spec:
-      replicas: 3
       containers:
       - name: appcontainer
         image: spring-kubernetes-env
