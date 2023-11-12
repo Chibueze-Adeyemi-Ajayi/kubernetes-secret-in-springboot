@@ -21,7 +21,7 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: kuberntes-secrets
+        - name: KUBERNETES_SECRETS_VALUE
           valueFrom:
             secretKeyRef:
               name: kuberntes-secrets
