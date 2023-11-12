@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Spring-Kubernetes-Secret-Deployment
+spec:
+  selector:
+    matchLabels:
+      app: springk8s
+  template:
+    metadata:
+      labels:
+        app: springk8s
+    spec:
+      containers:
+      - name: app_container
+        image: spring-kubernetes-secret
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
