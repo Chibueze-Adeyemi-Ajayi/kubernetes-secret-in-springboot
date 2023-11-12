@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: appcontainer
-        image: spring-kubernetes-secret
+        image: spring-kubernetes-env
+        imagePullPolicy: Never
         resources:
           limits:
             memory: "128Mi"
