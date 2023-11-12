@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Spring-Kubernetes-Secret-Deployment
+  name: spring-kubernetes-secret-deployment
 spec:
   selector:
     matchLabels:
@@ -12,7 +12,7 @@ spec:
         app: springk8s
     spec:
       containers:
-      - name: app_container
+      - name: appcontainer
         image: spring-kubernetes-secret
         resources:
           limits:
