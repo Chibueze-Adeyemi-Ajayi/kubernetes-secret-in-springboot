@@ -1,0 +1,2 @@
+my-secret:
+    data: ${KUBERNETES_SECRETS_VALUE}
